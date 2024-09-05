@@ -1,0 +1,160 @@
+/* Fonts and Colors */
+:root {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --accent-color: #00bcd4;
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+    --light-bg: #f5f5f5;
+    --dark-bg: #1e1e1e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--dark-bg);
+    padding: 20px 0;
+    border-bottom: 1px solid #333;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.logo {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    color: var(--accent-color);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+.theme-toggle {
+    background-color: var(--accent-color);
+    color: #121212;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: var(--heading-font);
+}
+
+main {
+    padding: 20px 0;
+}
+
+#hero {
+    background-color: var(--dark-bg);
+    padding: 60px 0;
+    text-align: center;
+}
+
+#hero h2 {
+    font-family: var(--heading-font);
+    color: var(--accent-color);
+    font-size: 2.5rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+h2 {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+}
+
+section {
+    padding: 60px 0;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.project h3 {
+    font-family: var(--heading-font);
+    color: var(--accent-color);
+    font-size: 1.5rem;
+}
+
+.project p {
+    color: var(--text-color);
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skills-list li {
+    background-color: var(--dark-bg);
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family: var(--heading-font);
+    color: var(--accent-color);
+}
+
+#contact p {
+    font-size: 1.1rem;
+}
+
+footer {
+    background-color: var(--dark-bg);
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    color: var(--text-color);
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
